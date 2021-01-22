@@ -1,0 +1,340 @@
+html{
+    font-family:ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック;
+    margin:auto;
+}
+
+#container{
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.foi{
+    position: relative;
+}
+
+.dai{
+    background-image: url(img/コーヒー.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.fori{
+    text-align: center;
+    font-size:60px;
+    padding:300px 0;
+    margin: auto;
+    position: relative;
+}
+
+.iga{
+    width: 1000px;
+    height: 500px;
+}
+
+.iga:hover{
+    opacity: 0.7;
+}
+
+.navs{
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 ; 
+    
+}
+
+.suki{
+    margin:0 20px;
+}
+
+.rows{
+    color: black;
+}
+
+.rows:hover{
+    color:black;
+    text-decoration: none;
+}
+
+.col-md-3{
+    display: inline;
+   font-size: 20px;
+}
+
+.col-md-3 {
+    position: relative;
+    display: inline-block;
+  }
+  .col-md-3::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  .col-md-3:hover::after {
+    bottom: -4px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+.syoukai{
+    text-align: center;
+}
+
+.h{
+    text-align: center;
+    font-size:30px;
+    font-style: oblique;
+    margin:0 auto;
+    border-bottom: 2px solid black;
+    width: 350px;
+    padding:10px 0;
+}
+
+.fa{
+    height:200px;
+    width: auto;
+    text-align: center;
+}
+
+.namae{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.hov{
+    display: inline-block;
+    text-align: center;
+}
+
+.j{
+    height: 100px;
+    width: auto;
+    display: none;
+}
+
+.s{
+    height: 100px;
+    width: auto;
+}
+
+.hov:hover > .j{
+    display: inline-block;
+}
+
+.hov:hover > .s {
+    display: none;    
+}
+
+.hovs{
+    display: inline-block;
+    text-align: center;
+}
+
+.f{
+    height: 100px;
+    width: auto;
+    display: none;
+    text-align: center;
+}
+
+.o{
+    height: 100px;
+    width: auto;
+}
+
+.hovs:hover > .f{
+    display: inline-block;
+
+}
+
+.hovs:hover > .o {
+    display: none;    
+}
+
+.iga{
+    height:300px;
+    width: 50%;
+    margin-left:25%;
+    text-align: center;
+}
+
+.setu{
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.sukiru{
+    margin-top: 20px;
+}
+
+.des{
+    margin:0 20px;
+}
+
+.das{
+    margin:0 20px;
+}
+
+
+
+
+
+
+.conta{
+    font-size: 30px;
+}
+
+.col-6{
+    background-color:black;
+    color:white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.so{
+    list-style: none;
+}
+
+.kaku{
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    margin-top:20px;
+    padding: 5px 0;
+
+    background-color:black;
+    color:white;
+}
+
+
+
+.hidden_box{
+    display: none;
+}
+
+/* スマホだけに適用するCSS */
+
+@media screen and (max-width :770px) {
+
+    .select-s{
+        display:block;
+        width:100%;
+        z-index: 100;
+        top:100px;
+    }  
+
+    .jasu-s{
+        color:white;
+        padding:100px;
+        border-bottom:2px solid white;
+        text-decoration:none;
+        line-height: 1.5;
+        font-size:22px;
+    }
+
+    .aho-s{
+        text-decoration:none;
+        color:white;
+    }
+
+    
+
+    .mainer{
+        width:98%;
+        margin-top:-40px;
+    }
+
+    .navs{
+        display:none;
+    }
+
+    /**tesuto**/
+    .hidden_box {
+        padding: 0;
+        display:block;
+        position: absolute;
+        top:35px;
+        left:10%;
+    }
+
+    .hidden_box label:hover {
+        background-color: white;
+    }
+
+    
+    .hidden_box input {
+        display: none;
+    }
+    
+    .hidden_box .hidden_show {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .hidden_box input:checked ~ .hidden_show {
+        padding: 10px 0;
+        height: auto;
+        opacity: 1;
+    }
+
+    .miti:hover{
+        background-color:#efefef;
+        cursor: pointer;
+    }
+/*ハンバーガー＊*/
+.label2{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    position: absolute;
+    cursor: pointer;
+    padding-top:10px;
+    padding-left:10px;
+}
+
+.label2 span, .label2 span:before, .label2 span:after{
+    position: absolute;
+    height: 4px;/*線の太さ*/
+    width: 30px;/*長さ*/
+    border-radius: 20px;
+    background:black;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+
+.label2 span:before{
+    bottom: -10px;
+}
+
+.label2 span:after{
+    bottom:-20px;
+}
+/**ハンバーガー終わり*/
+
+}
+
