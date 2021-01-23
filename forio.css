@@ -270,11 +270,9 @@ footer{
 
     /**tesuto**/
     .hidden_box {
-        padding: 0;
+        padding: 20px 0;
+        padding-left:20px;
         display:block;
-        position: absolute;
-        top:35px;
-        left:10%;
     }
 
     .hidden_box label:hover {
